@@ -23,13 +23,43 @@ A visual summary by Tomomi Imura, illustrating how Foundry IQ shifts from isolat
 
 ![Doodle summary Episode 3](../images/visuals/E3-recap.png)
 
-## 📂 Sample Code
+## 🚀 Deploy Azure Resources
 
-To get hands-on experience, explore the sample implementation in the 📂 [Episode 3 Cookbook](./cookbook/) folder.
+Deploy all required Azure resources with one click — this creates AI Search, Azure OpenAI, AI Services, a Foundry project, an AI Search connection, model deployments, and RBAC roles:
 
-## 🔗 Additional Learning Resources
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fiq-series%2Fmain%2Finfra%2Fazuredeploy.json)
 
-- 📚 Microsoft Foundry Documentation: [Learn more](https://learn.microsoft.com/azure/ai-foundry/)
--  Join the Discussion: Ask your questions on our [Discord channel](https://discord.gg/REmjGvvFpW)
+> **Note:** This deployment is shared across all Foundry IQ episodes. You only need to deploy once — if you've already deployed for another episode, skip this and reuse your existing resources.
+
+After deployment, create a `.env` file in the `cookbook/` folder with your values from the deployment outputs:
+
+```env
+SEARCH_ENDPOINT=https://<your-search-service>.search.windows.net
+AOAI_ENDPOINT=https://<your-openai-resource>.openai.azure.com
+AOAI_EMBEDDING_MODEL=text-embedding-3-large
+AOAI_EMBEDDING_DEPLOYMENT=text-embedding-3-large
+AOAI_GPT_MODEL=gpt-4o-mini
+AOAI_GPT_DEPLOYMENT=gpt-4o-mini
+FOUNDRY_PROJECT_ENDPOINT=https://<your-ai-services>.services.ai.azure.com/api/projects/<your-project>
+FOUNDRY_MODEL_DEPLOYMENT_NAME=gpt-4o-mini
+AZURE_AI_SEARCH_CONNECTION_NAME=iq-series-search-connection
+```
+
+**Where to find these values:** All values are available in the deployment **Outputs** tab in the Azure portal. You can also find them in [Microsoft Foundry](https://ai.azure.com) → your project → **Overview**.
+
+For CLI deployment and cleanup instructions, see the [Infrastructure Guide](../infra/README.md).
+
+## 📓 Run the Cookbook
+
+Once your Azure resources are deployed, open the [Episode 3 Cookbook](./cookbook/) and follow the step-by-step notebook to get started.
+
+## 🔗 Learn More
+
+- 📖 [What is Foundry IQ?](https://learn.microsoft.com/azure/foundry/agents/concepts/what-is-foundry-iq?tabs=portal)
+- 📚 [Azure AI Foundry Documentation](https://learn.microsoft.com/azure/ai-foundry/)
+
+## 💬 Community
+
+- Ask your questions on our [Discord channel](https://discord.gg/REmjGvvFpW)
 
 ### 🎉 Congratulations! You've completed The IQ Series. Continue exploring Foundry IQ and join our [Discord community](https://discord.gg/REmjGvvFpW) to share your learnings!
