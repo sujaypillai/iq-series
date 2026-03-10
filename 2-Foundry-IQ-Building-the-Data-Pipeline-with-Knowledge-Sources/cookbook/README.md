@@ -1,19 +1,6 @@
-# Episode 2 Sample: Building the Data Pipeline with Knowledge Sources
+# Episode 2 Cookbook: Building the Data Pipeline with Knowledge Sources
 
-This folder contains samples and resources for Episode 2 of The IQ Series.
-
-<!-- 
-🎤 SPEAKERS: Add your content here!
-
-This can include:
-- Code samples (Python, JavaScript, etc.)
-- Jupyter notebooks
-- Screenshots and walkthroughs from Microsoft Foundry
-- Architecture diagrams
-- Step-by-step tutorials
-
-Feel free to restructure this README as needed.
--->
+> **Coming soon!** This cookbook will be available when Episode 2 premieres on **March 25, 2026**.
 
 ## Additional Resources
 

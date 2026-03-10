@@ -46,29 +46,9 @@ Episode folders also include Jupyter notebook cookbooks with hands-on, step-by-s
 
 ### Deploy to Azure
 
-Deploy all required Azure resources with one click — this creates AI Search, Azure OpenAI, AI Services, a Foundry project, an AI Search connection, model deployments, and RBAC roles:
-
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fiq-series%2Fmain%2Finfra%2Fazuredeploy.json)
 
-You'll be prompted for your **User Object ID** (run `az ad signed-in-user show --query id -o tsv` to get it) and can customize the resource prefix, location, and SKUs.
-
-After deployment, create a `.env` file in the repo root with the output values — see the [infra README](./infra/README.md) for details.
-
-> **Prefer the CLI?** You can also deploy via script:
-> ```bash
-> cd infra
-> ./deploy.sh -g "iq-series-rg" -l "eastus2"
-> ```
-> The script deploys infrastructure and auto-generates the `.env` file. See [infra/](./infra/) for Windows instructions.
-
-### Run the Cookbooks
-
-1. [Fork](https://github.com/microsoft/iq-series/fork) and clone the repository:
-   ```bash
-   git clone https://github.com/your-org/iq-series.git
-   cd iq-series
-   ```
-2. Navigate to the Episode of your choice and open the cookbook notebook.
+Follow the [Episode 1 README](./1-Foundry-IQ-Unlocking-Knowledge-for-Agents/README.md) for step-by-step deployment instructions and to run your first cookbook.
 
 ## 🙏 Get Involved
 

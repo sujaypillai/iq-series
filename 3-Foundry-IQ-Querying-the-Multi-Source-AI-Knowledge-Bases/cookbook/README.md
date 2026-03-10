@@ -1,19 +1,6 @@
-# Episode 3 Sample: Querying the Multi-Source AI Knowledge Bases
+# Episode 3 Cookbook: Querying the Multi-Source AI Knowledge Bases
 
-This folder contains samples and resources for Episode 3 of The IQ Series.
-
-<!-- 
-🎤 SPEAKERS: Add your content here!
-
-This can include:
-- Code samples (Python, JavaScript, etc.)
-- Jupyter notebooks
-- Screenshots and walkthroughs from Microsoft Foundry
-- Architecture diagrams
-- Step-by-step tutorials
-
-Feel free to restructure this README as needed.
--->
+> **Coming soon!** This cookbook will be available when Episode 3 premieres on **April 1, 2026**.
 
 ## Additional Resources
 

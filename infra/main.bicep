@@ -163,6 +163,9 @@ resource project 'Microsoft.CognitiveServices/accounts/projects@2025-06-01' = {
   parent: aiServices
   name: names.project
   location: location
+  identity: {
+    type: 'SystemAssigned'
+  }
   properties: {
     displayName: 'IQ Series Foundry Project'
     description: 'Project for running the IQ Series cookbooks'
