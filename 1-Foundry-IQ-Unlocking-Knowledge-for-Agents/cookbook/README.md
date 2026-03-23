@@ -38,7 +38,7 @@ az ad signed-in-user show --query id -o tsv
 
 This returns your Microsoft Entra ID unique identifier — paste it into the deployment form. It's needed to assign proper RBAC roles to your account.
 
-After deployment, create a `.env` file in this folder with your values from the deployment outputs:
+After deployment, create a `.env` file **in this folder** (`1-Foundry-IQ-Unlocking-Knowledge-for-Agents/cookbook/.env`) with your values from the deployment outputs:
 
 ```env
 SEARCH_ENDPOINT=https://<your-search-service>.search.windows.net

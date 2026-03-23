@@ -62,7 +62,7 @@ var names = {
   aiServices: '${resourcePrefix}-ai-${uniqueSuffix}'
   project: '${resourcePrefix}-project'
   searchConnection: 'iq-series-search-connection'
-  storage: '${resourcePrefix}stor${uniqueSuffix}'
+  storage: take('${toLower(resourcePrefix)}st${uniqueSuffix}', 24)
   blobContainer: 'product-manuals'
   embeddingDeployment: 'text-embedding-3-large'
   chatDeployment: 'gpt-4o-mini'
