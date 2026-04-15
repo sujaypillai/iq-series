@@ -26,6 +26,17 @@ Together, these IQs enable AI agents to reason, retrieve, and act with deep busi
 | Work IQ                                                                                                                              | Coming soon!                                                                       |                 |                                                                                     |
 | Fabric IQ                                                                                                                            | Coming soon!                                                                       |                 |                                                                                     |
 
+## 🏅 Earn the Foundry IQ Badge
+
+Completed all three Foundry IQ cookbooks? You can now request your community badge.
+
+1. Fork this repo and save your notebook outputs in your fork
+2. Capture a final output screenshot for each episode
+3. Submit a [badge request issue](https://github.com/microsoft/iq-series/issues/new?template=foundry-iq-badge-request.yml)
+4. Complete the required [badge form](https://aka.ms/iq-series/foundry-iq-badge-form)
+
+> Badges are issued by the Global AI Community, so please make sure you have an account before submitting.
+
 ### Episode Format
 
 Each episode includes:
